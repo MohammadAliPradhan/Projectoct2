@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './ContactForm.css'
 
 export default function ContactForm() {
   const [productName, setProductName] = useState('');
@@ -56,6 +57,7 @@ export default function ContactForm() {
           />
         </div>
         <div className="mb-3">
+
           <label htmlFor="productPrice" className="form-label">
             Type (shopping, blog, etc.):
           </label>
@@ -79,7 +81,13 @@ export default function ContactForm() {
             onChange={handleProductDescriptionChange}
             required
           />
+
+
+
+
         </div>
+
+
         <div className="mb-3">
           <label htmlFor="userEmail" className="form-label">
             Your Email:
