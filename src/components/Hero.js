@@ -30,7 +30,7 @@ const Hero = () => {
           For You.
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Just Fillup the form and our team will contact you for th
+        Just Fillup the form and our team will contact you for the rest of the talk.
         </p>
       </div>
       <div className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}>

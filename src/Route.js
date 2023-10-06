@@ -16,6 +16,7 @@ import {
 import About from './About';
 import styles from './style';
 import TermsAndCondition from "./TermsAndCondition"
+import MyForm from './MyForm';
 
 const App = () => {
   return (
@@ -52,7 +53,7 @@ function Routejs() {
     <Router>
       <Routes>
         <Route path='/' element={<App />} />
-        <Route path='/aboutus' element={<About />} />
+        <Route path='/aboutus' element={<MyForm />} />
         <Route path='/terms' element={<TermsAndCondition />} />
       </Routes>
     </Router>
