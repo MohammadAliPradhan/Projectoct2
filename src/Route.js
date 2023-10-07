@@ -52,9 +52,9 @@ function Routejs() {
     <Router>
       <Routes>
         <Route element={<Navbar />}>
-          <Route path='/' element={<App />} />
-          <Route path='/aboutus' element={<MyForm />} />
-          <Route path='/terms' element={<TermsAndCondition />} />
+          <Route index element={<App />} />
+          <Route path='aboutus' element={<MyForm />} />
+          <Route path='terms' element={<TermsAndCondition />} />
         </Route>
       </Routes>
     </Router >
