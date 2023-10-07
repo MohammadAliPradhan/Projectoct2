@@ -23,7 +23,6 @@ const App = () => {
     <div className='bg-primary w-full overflow-hidden'>
       <div className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
-          <Navbar />
         </div>
       </div>
       <div className={`bg-primary ${styles.flexStart}`}>
@@ -52,11 +51,13 @@ function Routejs() {
   return (
     <Router>
       <Routes>
-        <Route path='/' element={<App />} />
-        <Route path='/aboutus' element={<MyForm />} />
-        <Route path='/terms' element={<TermsAndCondition />} />
+        <Route element={<Navbar />}>
+          <Route path='/' element={<App />} />
+          <Route path='/aboutus' element={<MyForm />} />
+          <Route path='/terms' element={<TermsAndCondition />} />
+        </Route>
       </Routes>
-    </Router>
+    </Router >
   )
 }
 

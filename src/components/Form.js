@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 
 function ProductForm() {
+
+
   const [productName, setProductName] = useState('');
   const [productPrice, setProductPrice] = useState('');
   const [productDescription, setProductDescription] = useState('');
@@ -35,10 +37,10 @@ function ProductForm() {
     console.log('User Email:', userEmail);
     console.log('User Contact:', userContact);
 
-    // You can send this data to a server or perform other actions here.
   };
 
   return (
+    <>
     <form action="process_form.php" method="post">
       <div className="container mt-4">
         <h1 className="text-center">Contact us</h1>
@@ -117,6 +119,7 @@ function ProductForm() {
         </p>
       </div>
     </form>
+    </>
   );
 }
 

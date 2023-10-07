@@ -1,10 +1,14 @@
 
 import React from 'react';
+import { Outlet } from 'react-router-dom';
+
 
 class MyForm extends React.Component {
   render() {
+
     return (
-      <div>
+       <div>
+        <Outlet />
         {/* Paste the Google Form embed code here */}
         <iframe
           title="My Google Form"
