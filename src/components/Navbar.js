@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { close, menu } from '../assets'
 import logo from '../assets/logo.png'
 import { navLinks } from '../constants'
-import { Outlet } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <>
     <nav className='w-full flex py-6 justify-between items-center navbar'>
-      <img src={logo} alt='hoobank' className='w-[124px] h-[32px]'/>
+      <Link to="/"><img src={logo} alt='hoobank' className='w-[80px] h-[80px] logoClass'/></Link>
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav, i) => (
           <li 
